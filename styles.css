@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(Assets/background.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh;
+	height: auto;
+	width: full;
+	font-family: Oswald, sans-serif;
+}
+
+nav {
+	display: flex;
+	background: #000000;
+	gap: 60px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	width: full;
+}
+
+nav button{
+	font-family: Oswald, sans-serif;
+	font-size: 2rem;
+	background: transparent;
+	border: none;
+	color: #cb1717;
+	min-width: auto;
+	cursor: pointer;
+}
+
+nav button:hover {
+	text-shadow: 0 0 15px #FFFFFF;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: full;
+	height: auto;
+	min-height: 85vh;
+}
+
+#clock {
+	font-size: 6rem;
+	font-family: monospace;
+	color: #cb1717;
+	width: auto;
+	padding: 20px;
+	height: auto;
+	backdrop-filter: blur(5px);
+	background-color: #00000010;
+	text-shadow: 3px 3px 3px #000000;
+}
+
+#stopwatch {
+	color: #cb1717;
+	width: auto;
+	padding: 40px;
+	height: auto;
+	backdrop-filter: blur(5px);
+	background-color: #00000010;
+	text-align: center;
+
+	display: none;
+}
+
+#stopwatch-display {
+	font-size: 6rem;
+	text-shadow: 3px 3px 3px #000000;
+	font-family: monospace;
+	margin-bottom: 30px;
+}
+
+#stopwatch-controls {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+#stopwatch-controls button {
+	font-size: 2rem;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+.start-btn {
+	background-color: #00a86b;
+}
+
+.start-btn:hover {
+	background-color: #00a86b90;
+}
+
+.stop-btn {
+	background-color: #f04924;
+}
+
+.stop-btn:hover {
+	background-color: #f0492490;
+}
+
+.reset-btn {
+	background-color: #0167a4;
+}
+
+.reset-btn:hover {
+	background-color: #0167a490;
+}
+
+#timer {
+	backdrop-filter: blur(5px);
+	background-color: #00000010;
+	color: #cb1717;
+	width: auto;
+	height: auto;
+	padding: 50px;
+	text-align: center;
+	text-shadow: 3px 3px 3px #000000;
+	
+	display: none;
+}
+
+fieldset {
+	border: solid 5px #cb1717;
+	box-shadow: 3px 3px 3px #000000;
+	padding: 40px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+legend {
+	text-shadow: 3px 3px 3px #000000;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 10px;
+}
+
+#timer input {
+	text-shadow: 3px 3px 3px #000000;
+	font-size: 1.5rem;
+	background-color: transparent;
+	box-shadow: 3px 3px 3px #000000;
+	border-color: #cb1717;
+	padding: 10px;
+	color: #cb1717;
+	width: 50%;
+	text-align: center;
+	margin: 10px;
+}
+
+#timer-submit {
+	text-shadow: 3px 3px 3px #000000;
+	font-size: 1.5rem;
+	box-shadow: 3px 3px 3px #000000;
+	padding: 10px 20px;
+	border-radius: 10px;
+	color: #cb1717;
+	border: solid 4px #cb1717;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#timer-submit:hover {
+	background-color: #FFFFFF10;
+}
+
+#timer-submit:active {
+	background-color: #FFFFFF20;
+}
+
+#timer-display {
+	font-size: 6rem;
+	font-family: monospace;
+}
+
+#timer-controls {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+#timer-controls button {
+	font-size: 1.5rem;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+#timer-device {
+	display: none;
+}
+
+#timer-msg {
+	font-size: 5rem;
+	padding: 50px;
+	display: none;
+}
