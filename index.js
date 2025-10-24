@@ -162,6 +162,7 @@ timerInputSubmit.onclick = function() {
 		timerStart.onclick = function() {
 			if(!isRunning) {
 				startTime = Date.now() - elapsedTime;
+				updateTimer();
 				timerID = setInterval(updateTimer, 10);
 				isRunning = true;
 			}
@@ -190,4 +191,5 @@ timerInputSubmit.onclick = function() {
 		
 	}
 	
+
 }
