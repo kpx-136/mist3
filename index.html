@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>Clock</title>
+		
+		<meta charset="utf-8">
+		<meta type="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Oswald font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="styles.css">
+		
+		<!-- favicon -->
+		<link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+	
+	</head>
+	
+	<body>
+	
+		<nav>
+		
+			<button id="clock-section">Clock</button>
+			<button id="timer-section">Timer</button>
+			<button id="stopwatch-section">Stopwatch</button>
+		
+		</nav>
+		
+		<main>
+			
+			<div id="clock">00:00:00</div>
+
+			<div id="stopwatch">
+				
+				<div id="stopwatch-display">00:00:00:00</div>
+
+				<div id="stopwatch-controls">
+					<button id="stopwatch-start" class = "start-btn">Start</button>
+					<button id="stopwatch-stop" class = "stop-btn">Stop</button>
+					<button id="stopwatch-reset" class = "reset-btn">Reset</button>
+				</div>
+
+			</div>
+			
+			<div id="timer">
+				
+				<div id="timer-input">
+				
+					<fieldset>
+					
+						<legend> Input time </legend>
+						
+						<input type="number" value="0" id="timer-hours" required>
+						<label for="timer-hours">hours</label><br>
+						
+						<input type="number" value="0" id="timer-mins" required>
+						<label for="timer-mins">mins</label><br>
+						
+						<input type="number" value="0" id="timer-secs" required>
+						<label for="timer-secs">secs</label><br>
+						
+						<br>
+						<button id="timer-submit">Start Timer</button>
+
+					</fieldset>					
+
+				</div>
+				
+				<div id="timer-device">
+				
+					<div id="timer-display">00:00:00</div>
+					
+					<div id="timer-controls">
+					
+						<button id="timer-start" class = "start-btn">Start</button>
+						<button id="timer-stop" class = "stop-btn">Stop</button>
+						<button id="timer-reset" class = "reset-btn">Reset</button>
+					
+					</div>
+				
+				</div>
+				
+				<div id="timer-msg">
+					
+					placeholder text :)
+					
+				</div>
+				
+			</div>
+		
+		</main>
+	
+		<script src="index.js"></script>
+		<audio src="Assets/timer-audio.mp3" id="timer-audio" preload="auto"></audio>
+	
+	</body>
+
+</html>
